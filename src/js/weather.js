@@ -1,8 +1,11 @@
+import {Calendar} from "./calendar.js";
+
 export class Weather{
   constructor(){
     //takes in time from calendar
-
-    this.returnCiites; //format? : ICAO Code
+    this.lowestTemp;
+    this.highestTemp;
+    this.returnCiites = []; //format? : ICAO Code
 
     //https://en.wikipedia.org/wiki/List_of_the_busiest_airports_in_the_United_States
     this.searchCities = [ //[City, State, IATA
@@ -71,12 +74,54 @@ export class Weather{
     ['Reno', 'NV', 'RNO'],
     ['Alburquerque', 'NM', 'ABQ'],
     ['Norfolk', 'VA', 'ORF']
-
     ];
     //
   }
 
-  getWeekendForecast(){
+  getWeekendForecast(city, state){ 
+    fetch(`https://api.weatherbit.io/v2.0/forecast/daily?city=${city},${state}&key=${process.env.Weather_API_KEY}`)
+      .then((response) => response.json())
+      .then((data) => this.parseData(data));
 
-  } 
+      //from here, get today's date, 
+      //index 0 of this json is today's forecast
+      //so we need to find the index of friday, sat, sun, FROM today (so if today is monday, we need index 4, 5, 6]
+      //formula is get today's day in terms of 0, 1, 2, 3
+      //subtract delta from friday
+      //add that
+  }
+
+  parseData(inputData){
+    
+  }
+
+  checkTemp(inputData){ //return true or false depending on if the temperature is within the correct range
+    //get today's date
+    let data = inputData;
+    let fridayNum = new Calendar().getDaysTilFriday();
+    console.log(data.data[fridayNum]);
+    var weekendLow = data.data[fridayNum].low_temp;
+    var weekendHigh = data.data[fridayNum].high_temp;
+    if(data.data[fridayNum + 1].low_temp < weekendLow){
+      weekendLow = data.data[fridayNum + 1].low_temp;
+    }
+    if(data.data[fridayNum + 2].low_temp < weekendLow){
+      weekendLow = data.data[fridayNum + 1].low_temp;
+    }
+
+    if(data.data[fridayNum + 1].high_temp > weekendHigh){
+      weekendHigh = data.data[fridayNum + 1].high_temp;
+    }
+    if(data.data[fridayNum + 2].high_temp > weekendHigh){
+      weekendHigh = data.data[fridayNum + 2].high_temp;
+    }
+    if(weekendLow < this.lowestTemp || weekendHigh > this.highestTemp){
+      //do not add
+      return false;
+    } else {
+      //add
+      return true;
+    }
+  }
 }
+
