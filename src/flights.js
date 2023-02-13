@@ -6,7 +6,7 @@ export default class FlightService {
       const options = {
         method: 'GET',
         headers: {
-          'X-RapidAPI-Key': 'c8004727a3mshd2b61a34f1236a1p1a3f75jsn97a7b2d8dbcb',
+          'X-RapidAPI-Key': `${process.env.Flight_API_KEY}`,
           'X-RapidAPI-Host': 'priceline-com-provider.p.rapidapi.com'
         }
       };
