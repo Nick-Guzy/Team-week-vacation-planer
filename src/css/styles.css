@@ -1,3 +1,343 @@
+/***************************************/
+/***************************************/
+/***************************************/
+/**********************GRECO_FOR_TITLES*/
+
+
+
+@font-face {
+  font-family: 'spectral';
+  src: url('../assets/fonts/greco/spectralsc-bold-webfont.woff2') format('woff2'),
+       url('../assets/fonts/greco/spectralsc-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'spectral';
+  src: url('../assets/fonts/greco/spectralsc-bolditalic-webfont.woff2') format('woff2'),
+       url('../assets/fonts/greco/spectralsc-bolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'spectral';
+  src: url('../assets/fonts/greco/spectralsc-extrabolditalic-webfont.woff2') format('woff2'),
+       url('../assets/fonts/greco/spectralsc-extrabolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'spectral';
+  src: url('../assets/fonts/greco/spectralsc-extralight-webfont.woff2') format('woff2'),
+       url('../assets/fonts/greco/spectralsc-extralight-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'spectral';
+  src: url('../assets/fonts/greco/spectralsc-extralightitalic-webfont.woff2') format('woff2'),
+       url('../assets/fonts/greco/spectralsc-extralightitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'spectral';
+  src: url('../assets/fonts/greco/spectralsc-light-webfont.woff2') format('woff2'),
+       url('../assets/fonts/greco/spectralsc-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'spectral';
+  src: url('../assets/fonts/greco/spectralsc-lightitalic-webfont.woff2') format('woff2'),
+       url('../assets/fonts/greco/spectralsc-lightitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'spectral';
+  src: url('../assets/fonts/greco/spectralsc-medium-webfont.woff2') format('woff2'),
+       url('../assets/fonts/greco/spectralsc-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'spectral';
+  src: url('../assets/fonts/greco/spectralsc-mediumitalic-webfont.woff2') format('woff2'),
+       url('../assets/fonts/greco/spectralsc-mediumitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'spectral';
+  src: url('../assets/fonts/greco/spectralsc-regular-webfont.woff2') format('woff2'),
+       url('../assets/fonts/greco/spectralsc-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+/***************************************/
+/***************************************/
+/***************************************/
+/*****************DARKER_GROTESQUE_BODY*/
+
+
+
+@font-face {
+    font-family: 'darker_grotesque';
+    src: url('../assets/fonts/darker_grotesque/darkergrotesque-black-webfont.woff2') format('woff2'),
+         url('../assets/fonts/darker_grotesque/darkergrotesque-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'darker_grotesque';
+    src: url('../assets/fonts/darker_grotesque/darkergrotesque-bold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/darker_grotesque/darkergrotesque-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'darker_grotesque';
+    src: url('../assets/fonts/darker_grotesque/darkergrotesque-extrabold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/darker_grotesque/darkergrotesque-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'darker_grotesque';
+    src: url('../assets/fonts/darker_grotesque/darkergrotesque-semibold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/darker_grotesque/darkergrotesque-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'darker_grotesque';
+    src: url('../assets/fonts/darker_grotesque/darkergrotesque-light-webfont.woff2') format('woff2'),
+         url('../assets/fonts/darker_grotesque/darkergrotesque-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'darker_grotesque';
+    src: url('../assets/fonts/darker_grotesque/darkergrotesque-medium-webfont.woff2') format('woff2'),
+         url('../assets/fonts/darker_grotesque/darkergrotesque-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'darker_grotesque';
+    src: url('../assets/fonts/darker_grotesque/darkergrotesque-regular-webfont.woff2') format('woff2'),
+         url('../assets/fonts/darker_grotesque/darkergrotesque-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+/***************************************/
+/***************************************/
+/***************************************/
+/**************************STANDARD_CSS*/
+
+
+
+
+
+
 body {
-    background-color: antiquewhite;
+    background-image: linear-gradient(to right, #572836, black);
+    color: whitesmoke;
+    height: 100vh;
+    padding: 0;
+    margin: 0px;
+    overflow: hidden;
+    
+  }
+
+  .headerOuter {
+    background-image: linear-gradient(to right, #c7f3ff, #578fff, #2d71b5, black);
+    border: 10px solid #2d71b5;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 40px;
+    width: 100vw;
+    display: flex;
+    color: black;
+  }
+.scaleToDivTitle {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 200px;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.SPACERDIV {
+  height: auto;
+  width: 3.7%;
+}
+.titleDiv {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.titleP {
+  margin: 0px;
+  border: 4px solid #c7f3ff;
+  font-size: 45pt;
+  padding: 125px;
+  padding-left: 135px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.newTripDiv {
+  display: flex;
+}
+
+  .gridTop {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: grid;
+    grid-template-columns: 180px 180px ;
+    grid-template-rows: 80px 80px;
+    row-gap: 20px;
+    column-gap: 5px;
+  }
+  .buttonTop {
+    display: inline-block;
+    background-color: #805c66;
+    padding: 20px;
+    width: auto;
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 18pt;
+    font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 0px;
+    box-shadow: 5px 5px 5px black;
+    transition: 0.4s;
+  }
+  .buttonTop:hover {
+    cursor:pointer;
+    background-color: #852240;
+  }
+
+  .buttonNewTrip {
+    grid-row: 2;
+    grid-column: span 2;
+    font-size: 23pt;
+    padding-top: auto;
+    padding-bottom: auto;
+    line-height: 0px;
+    letter-spacing: 2px;
+  }
+
+  .subtitleP {
+    color: black;
+    font-size: 20pt;
+    margin: 0px;
+    margin-top: 8px;
+    margin-left: 202px;
+    font-style: italic;
+  }
+
+  .forAthena {
+    background-image: url(../assets/images/d7_opac37_ALPHA_Athènes_Acropole_Caryatides.png);
+    height: 1100px;
+    width: 1300px;
+    z-index: 20;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: right;
+  }
+
+  .flexBackground {
+    float: right;
   }
