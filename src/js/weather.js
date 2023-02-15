@@ -11,7 +11,6 @@ export class Weather{
     this.searchCities = [ //[City, State, IATA
     ['Atlanta', 'GA', 'ATL'],
     ['Dallas', 'TX', 'DFW'],
-    /*
     ['Denver', 'CO', 'DEN'],
     ['Chicago', 'IL', 'ORD'],
     ['Los Angeles', 'CA', 'LAX'],
@@ -51,7 +50,7 @@ export class Weather{
     ['Raleigh', 'NC', 'RDU'],
     ['New Orleans', 'LA', 'MSY'],
     ['Oakland', 'CA', 'OAK'],
-    ['Orange County', 'CA', 'SNA'], //test?
+    //['Orange County', 'CA', 'SNA'], //test?
     ['Kansas City', 'MO', 'MCI'],
     ['San Antonio', 'TX', 'SAT'],
     ['San Jose', 'CA', 'SJC'],
@@ -75,7 +74,7 @@ export class Weather{
     ['Reno', 'NV', 'RNO'],
     ['Alburquerque', 'NM', 'ABQ'],
     ['Norfolk', 'VA', 'ORF']
-    */
+    
     ];
     //
   }

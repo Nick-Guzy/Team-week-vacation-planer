@@ -21,7 +21,7 @@ export class Calendar{
   }
   
   calculateNextFriday(){
-    //get today's date
+    //get today's date.
     //return the next friday 
     let newDate = new Date(this.currentDate.getFullYear(), this.currentDate.getMonth(), this.currentDate.getDate() + this.getDaysTilFriday());
     return newDate();
@@ -29,6 +29,10 @@ export class Calendar{
 
 
   getDaysTilFriday(){
+    //calculate sat and sun
+    if(this.currentDate.getDay() === 6){
+      return 12;
+    }
     let dayDelta = (5 - this.currentDate.getDay()); 
     return dayDelta;
   }
