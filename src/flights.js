@@ -26,15 +26,15 @@ export class FlightService {
             let destinationAirport = element.destAirport;
             let originalAirport = element.origAirport;
             let marketingAirline = element.marketingAirline;
-            let flightNumer = element.flightNumber;
+            let flightNumber = element.flightNumber;
+            let flightDuration = myResponse.totalTripSummary.minDuration;
             let price = myResponse.pricedItinerary[index].pricingInfo;
-            this.flightsPrice.push([arrivalTime,departTime,destinationAirport,originalAirport,marketingAirline,flightNumer,price]);
+            this.flightsPrice.push([arrivalTime,departTime,destinationAirport,originalAirport,marketingAirline,flightNumber,price,flightDuration]);
             
           });
           })
         .catch(err => console.error(err));
     } finally {
-      console.log('hello');
     }
   }
 }
