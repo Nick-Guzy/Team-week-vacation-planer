@@ -195,7 +195,7 @@ body {
 
 .SPACERDIV {
   height: auto;
-  width: 13%;
+  width: 34%;
 }
 .titleDiv {
   margin-top: auto;
@@ -310,7 +310,7 @@ display: flex;
 
 .overFlowAside {
   overflow-y: auto;
-  height: 75%;
+  height: 80%;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -332,7 +332,6 @@ display: flex;
 }
 
 
-
 .TEMPLATEsave:hover {
   background-image: linear-gradient(to bottom, #852240, #421120);
   cursor: pointer;
@@ -344,7 +343,7 @@ display: flex;
 }
 .outerDivTripFinder {
   width: 76%;
-  height: 80%;
+  height: 84%;
   z-index: 30;
   display: absolute;
   margin-left: 2%;
@@ -353,6 +352,7 @@ display: flex;
   overflow: hidden;
   background-image: url(../assets/images/flat-mountains.svg);
   background-position: right;
+  background-position: bottom;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 
@@ -433,7 +433,7 @@ display: flex;
 
 .outputTripFinder {
   margin-top: 18px;
-  height: 80%;
+  height: 84%;
   width: 56%;
   background-color: rgba(225, 225, 225, 0.7);
   border-radius: 20px;
@@ -461,7 +461,7 @@ display: flex;
 .startLocationDiv {
   background-color: rgba(227, 70, 45, 0.3);
   /*background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0), rgba(0,0,0,0.8)), url(../assets/images/tortoise-shell-reddened.svg);*/
-  width: 93%;
+  width: 95%;
   border-radius: 20px;
   margin-left: 15px;
   height: max-content;
@@ -473,7 +473,7 @@ display: flex;
 .tempDiv {
   background-color: rgba(227, 70, 45, 0.3);
   /*background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0), rgba(0,0,0,0.8)), url(../assets/images/tortoise-shell-reddened.svg);*/
-  width: 93%;
+  width: 95%;
   border-radius: 20px;
   margin-left: 15px;
   height: max-content;
@@ -512,11 +512,11 @@ display: flex;
 }
 
 .submitDiv {
-  margin-top: 11%;
+  margin-top: 37.5%;
 }
 
 .spaceOutButtons {
-  width: 40%;
+  width: 54%;
   display: inline-block;
 }
 .submitTempButton {
@@ -541,7 +541,7 @@ display: flex;
 .sortByDiv {
   background-color: rgba(227, 70, 45, 0.3);
   /*background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0), rgba(0,0,0,0.8)), url(../assets/images/tortoise-shell-reddened.svg);*/
-  width: 93%;
+  width: 95%;
   border-radius: 20px;
   margin-left: 15px;
   height: max-content;
@@ -563,7 +563,6 @@ display: flex;
 .labelDistance {
   font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 18pt;
-  margin-bottom: 15px;
   margin-left: 5px;
   margin-top: 10px;
 }
@@ -575,12 +574,12 @@ display: flex;
   margin: 15px;
   margin-top: 10px;
   margin-left: 50px;
+  margin-bottom: 0px;
 }
 
 .labelTemp {
   font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 18pt;
-  margin-bottom: 25px;
   margin-left: 5px;
 }
 
@@ -591,6 +590,7 @@ display: flex;
   align-items: center;
   margin: 0px;
   padding: 0px;
+  margin-bottom: 10px;
   height: max-content;
 }
 
@@ -600,8 +600,25 @@ display: flex;
   margin: 0px;
   padding: 0px;
   height: max-content;
+  margin-bottom: 10px;
 }
 .inputTempSort {
+  background-color: black;
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18pt;
+  margin: 15px;
+  margin-left: 50px;
+  
+}
+
+.labelPrice {
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18pt;
+  margin-bottom: 25px;
+  margin-left: 5px;
+}
+
+.inputPriceSort {
   background-color: black;
   font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 18pt;
@@ -622,7 +639,7 @@ display: flex;
 }
 
 .minTempDropdown {
-  width: 100px;
+  width: 185px;
   background-color: black;
   color: whitesmoke;
   margin-top: 10px;
@@ -633,7 +650,7 @@ display: flex;
 }
 
 .maxTempDropdown {
-  width: 100px;
+  width: 185px;
   background-color: black;
   color: whitesmoke;
   margin-top: 10px;
@@ -641,4 +658,26 @@ display: flex;
   margin-bottom: 30px;
   font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 20px;
+}
+
+.startingAirportDropdown {
+  width: 300px;
+  background-color: black;
+  color: whitesmoke;
+  margin-top: 10px;
+  margin-left: 105px;
+  margin-bottom: 30px;
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+}
+
+.airportSelect {
+  color: whitesmoke;
+  background-color: black;
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  bottom: 100%;
+
 }

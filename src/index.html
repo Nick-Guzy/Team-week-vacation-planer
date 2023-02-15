@@ -39,7 +39,7 @@
           <div class="TEMPLATEsave">
             <p class="pYourTrips">"Min. of Brew.", Baltimore, Md.</p>
           </div>
-          <div class="TEMPLATEsave">
+          <!--<div class="TEMPLATEsave">
             <p class="pYourTrips">TEST</p>
           </div>
           <div class="TEMPLATEsave">
@@ -83,7 +83,7 @@
           </div>
           <div class="TEMPLATEsave">
             <p class="pYourTrips">TEST</p>
-          </div>
+          </div>-->
         </div>
       </div>
       <div class="outerDivTripFinder">
@@ -104,14 +104,80 @@
                 <label
                   class="toBlock input2 labelStartLocation"
                   for="startingLocationInput"
-                  >Starting Location:
+                  >Select Closest Starting Airport:
                 </label>
-                <input
+                <select name="startingAirpotDropdown" id="startingAirpotDropdown" class="startingAirportDropdown">
+                  <option class="airportSelect" value="0">-- Starting Aiport --</option>
+                  <option class="airportSelect" value="ATL">ATL, Atlanta, GA</option>
+                  <option class="airportSelect" value="DFW">DFW, Dallas, TX</option>
+                  <option class="airportSelect" value="DEN">DEN, Denver, CO</option>
+                  <option class="airportSelect" value="ORD">ORD, Chicago, IL</option>
+                  <option class="airportSelect" value="LAX">LAX, Los Angeles, CA</option>
+                  <option class="airportSelect" value="CLT">CLT, Charlotte, NC</option>
+                  <option class="airportSelect" value="MCO">MCO, Orlando, FL</option>
+                  <option class="airportSelect" value="LAS">LAS, Las Vegas, NV</option>
+                  <option class="airportSelect" value="PHX">PHX, Phoenix, NV</option>
+                  <option class="airportSelect" value="MIA">MIA, Miami, FL</option>
+                  <option class="airportSelect" value="SEA">SEA, Seattle, WA</option>
+                  <option class="airportSelect" value="IAH">IAH, Houston, TX</option>
+                  <option class="airportSelect" value="JFK">JFK, New York City, NY</option>
+                  <option class="airportSelect" value="EWR">EWR, Newark, NJ</option>
+                  <option class="airportSelect" value="FLL">FLL, Fort Lauderdale, FL</option>
+                  <option class="airportSelect" value="MSP">MSP, Minneapolis, MN</option>
+                  <option class="airportSelect" value="SFO">SFO, San Francisco, CA</option>
+                  <option class="airportSelect" value="DTW">DTW, Detroit, MI</option>
+                  <option class="airportSelect" value="BOS">BOS, Boston, MA</option>
+                  <option class="airportSelect" value="SLC">SLC, Salt Lake City, UT</option>
+                  <option class="airportSelect" value="PHL">PHL, Philadelphia, PA</option>
+                  <option class="airportSelect" value="BWI">BWI, Baltimore, MD</option>
+                  <option class="airportSelect" value="TPA">TPA, Tampa, FL</option>
+                  <option class="airportSelect" value="SAN">SAN, San Diego, CA</option>
+                  <option class="airportSelect" value="LGA">LGA, New York City, NY</option>
+                  <option class="airportSelect" value="MDW">MDW, Chicago, IL</option>
+                  <option class="airportSelect" value="BNA">BNA, Nashville, TN</option>
+                  <option class="airportSelect" value="IAD">IAD, Washington D.C., VA</option>
+                  <option class="airportSelect" value="VA">VA, Washington D.C., DCA</option>
+                  <option class="airportSelect" value="AUS">AUS, Austin, TX</option>
+                  <option class="airportSelect" value="DAL">DAL, Dallas, TX</option>
+                  <option class="airportSelect" value="HNL">HNL, Honolulu, HI</option>
+                  <option class="airportSelect" value="PDX">PDX, Portland, OR</option>
+                  <option class="airportSelect" value="HOU">HOU, Houston, TX</option>
+                  <option class="airportSelect" value="RSW">RSW, Fort Myers, FL</option>
+                  <option class="airportSelect" value="STL">STL, St. Louis, MO</option>
+                  <option class="airportSelect" value="SMF">SMF, Sacramento, CA</option>
+                  <option class="airportSelect" value="RDU">RDU, Raleigh, NC</option>
+                  <option class="airportSelect" value="MSY">MSY, New Orleans, LA</option>
+                  <option class="airportSelect" value="OAK">OAK, Oakland, CA</option>
+                  <option class="airportSelect" value="MCI">MCI, Kansas City, MO</option>
+                  <option class="airportSelect" value="SAT">SAT, San Antonio, TX</option>
+                  <option class="airportSelect" value="SJC">SJC, San Jose, CA</option>
+                  <option class="airportSelect" value="CLE">CLE, Cleveland, OH</option>
+                  <option class="airportSelect" value="IND">IND, Indianapolis, IND</option>
+                  <option class="airportSelect" value="PIT">PIT, Pittsburgh, PA</option>
+                  <option class="airportSelect" value="CVG">CVG, Cincinnati, OH</option>
+                  <option class="airportSelect" value="OGG">OGG, Kahului, HI</option>
+                  <option class="airportSelect" value="CMH">CMH, Colombus, OH</option>
+                  <option class="airportSelect" value="PBI">PBI, West Palm Beach, FL</option>
+                  <option class="airportSelect" value="JAX">JAX, Jacksonville, FL</option>
+                  <option class="airportSelect" value="BDL">BDL, Hartford, CT</option>
+                  <option class="airportSelect" value="MKE">MKE, Milkwaukee, WI</option>
+                  <option class="airportSelect" value="ONT">ONT, Ontario, CA</option>
+                  <option class="airportSelect" value="ANC">ANC, Anchorage, AK</option>
+                  <option class="airportSelect" value="CHS">CHS, Charleston, SC</option>
+                  <option class="airportSelect" value="BUR">BUR, Burbank, CA</option>
+                  <option class="airportSelect" value="OMA">OMA, Omaha, NE</option>
+                  <option class="airportSelect" value="BOI">BOI, Boise, ID</option>
+                  <option class="airportSelect" value="MEM">MEM, Memphis, TN</option>
+                  <option class="airportSelect" value="RNO">RNO, Reno, NV</option>
+                  <option class="airportSelect" value="ABQ">ABQ, Alburquerque. NM</option>
+                  <option class="airportSelect" value="ORF">ORF, Norfolk, VA</option>
+                </select>
+                <!--<input
                   class="nameTripInput inputStartInput"
                   type="text"
                   name="startingLocationInput"
                   id="startingLocationInput"
-                />
+                />-->
               </div>
               <div class="tempDiv">
                 <p class="toBlock input2 pDesiredTemp">
@@ -123,6 +189,7 @@
                   >Minimum Temperature:
                 </label>
                 <select class="minTempDropdown" name="minTempDropdown" id="minTempDropdown" size="1">
+                  <option class="tempOption" value="A">-- Min. Temp. --</option>
                   <option class="tempOption" value="120">120 &#8457</option>
                   <option class="tempOption" value="119">119 &#8457</option>
                   <option class="tempOption" value="118">118 &#8457</option>
@@ -282,6 +349,7 @@
                   >Maximum Temperature:
                 </label>
                 <select class="maxTempDropdown" name="maxTempDropdown" id="maxTempDropdown" size="1">
+                  <option class="tempOption" value="A">-- Max. Temp. --</option>
                   <option class="tempOption" value="120">120 &#8457</option>
                   <option class="tempOption" value="119">119 &#8457</option>
                   <option class="tempOption" value="118">118 &#8457</option>
@@ -455,6 +523,18 @@
                   />
                   <label class="labelTemp" for="radioSortTemp"
                     >Temperature</label
+                  >
+                </div>
+                <div class="sortByTempDiv">
+                  <input
+                    type="radio"
+                    name="sortInput"
+                    id="sortPriceInput"
+                    value="price"
+                    class="inputPriceSort"
+                  />
+                  <label class="labelPrice" for="radioSortTemp"
+                    >Price</label
                   >
                 </div>
               </div>
