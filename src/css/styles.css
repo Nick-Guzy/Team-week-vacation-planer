@@ -490,7 +490,6 @@ display: flex;
 
 .minTempLabel {
   margin-bottom: 5px;
-  margin-top: 20px;
   margin-left: 50px;
 }
 
@@ -503,6 +502,7 @@ display: flex;
 
 .maxTempLabel {
   margin-bottom: 5px;
+  margin-top: 30px;
   margin-left: 50px;
 }
 
@@ -602,6 +602,7 @@ display: flex;
   height: max-content;
   margin-bottom: 10px;
 }
+
 .inputTempSort {
   background-color: black;
   font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -655,7 +656,7 @@ display: flex;
   color: whitesmoke;
   margin-top: 10px;
   margin-left: 105px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 20px;
 }
