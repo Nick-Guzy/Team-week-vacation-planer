@@ -409,6 +409,7 @@ display: flex;
 .submitNameButton:hover {
   background-color: #4877d4;
   box-shadow: 0px 0px 25px whitesmoke;
+  cursor: pointer;
 }
 
 .divHoldInputAndOutput {
@@ -446,4 +447,149 @@ display: flex;
 .input2 {
   font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 18pt;
+}
+
+.labelStartLocation {
+  margin-left: 40px;
+}
+
+.inputStartInput {
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.startLocationDiv {
+  background-color: rgba(227, 70, 45, 0.3);
+  /*background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0), rgba(0,0,0,0.8)), url(../assets/images/tortoise-shell-reddened.svg);*/
+  width: 93%;
+  border-radius: 20px;
+  margin-left: 15px;
+  height: max-content;
+  padding-top: 15px;
+  margin-top: 12px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 10px black;
+}
+.tempDiv {
+  background-color: rgba(227, 70, 45, 0.3);
+  /*background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0), rgba(0,0,0,0.8)), url(../assets/images/tortoise-shell-reddened.svg);*/
+  width: 93%;
+  border-radius: 20px;
+  margin-left: 15px;
+  height: max-content;
+  padding-top: 10px;
+  margin-top: 5px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 10px black;
+}
+.pDesiredTemp {
+  margin: 15px;
+  margin-left: 37px;
+  margin-top: 10px;
+}
+
+.minTempLabel {
+  margin-bottom: 5px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.minTempInput {
+  margin: 10px;
+  margin-top: 5px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.maxTempLabel {
+  margin-bottom: 5px;
+  margin-left: 50px;
+}
+
+.maxTempInput {
+  margin-left: 50px;
+  margin-bottom: 25px;
+}
+
+.submitDiv {
+  margin-top: 18.5%;
+}
+
+.spaceOutButtons {
+  width: 40%;
+  display: inline-block;
+}
+.submitTempButton {
+  height: max-content;
+  font-size: 14pt;
+  padding: 5px;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: whitesmoke;
+  margin-left: 15px;
+  background-color: #4d1425;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: 0.1s;
+}
+.submitTempButton:hover {
+  box-shadow: 0px 0px 10px whitesmoke;
+  cursor: pointer;
+}
+
+.sortByDiv {
+  background-color: rgba(227, 70, 45, 0.3);
+  /*background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0), rgba(0,0,0,0.8)), url(../assets/images/tortoise-shell-reddened.svg);*/
+  width: 93%;
+  border-radius: 20px;
+  margin-left: 15px;
+  height: max-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 5px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 10px black;
+}
+
+.pSortByTitle {
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18pt;
+  margin: 15px;
+  margin-left: 37px;
+  margin-top: 10px;
+}
+
+.labelDistance {
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18pt;
+  margin-bottom: 15px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.inputDistanceSort {
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18pt;
+  margin: 15px;
+  margin-top: 10px;
+}
+
+.labelTemp {
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18pt;
+  margin-bottom: 25px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.inputTempSort {
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18pt;
+  margin: 15px;
+  margin-top: 10px;
+}
+
+.sortByTempDiv {
+  display: block;
 }

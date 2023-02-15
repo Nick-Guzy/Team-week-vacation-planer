@@ -100,44 +100,84 @@
         <div class="divHoldInputAndOutput">
           <div class="inputTripFinder">
             <form class="mainInput">
-              <label class="toBlock input2" for="startingLocationInput"
-                >Starting Location:
-              </label>
-              <input
-                class="nameTripInput"
-                type="text"
-                name="startingLocationInput"
-                id="startingLocationInput"
-              />
-              <p class="toBlock input2">Desired Temperature Range:</p>
-              <label for="minimumTempInput" class="toBlock input2"
-                >Minimum Temperature</label
-              >
-              <input
-                class="nameTripInput"
-                type="text"
-                name="minimumTempInput"
-                id="minimumTempInput"
-              />
-              <label class="toBlock input2" for="maximumTempInput"
-                >Maximum Temperature</label
-              >
-              <input
-                class="nameTripInput"
-                type="text"
-                name="maximumTempInput"
-                id="maximumTempInput"
-              />
-              <button class="toBlock submitNameButton" type="submit">
-                FIND TRIP!
-              </button>
-              <button class="toBlock submitNameButton" type="reset">
-                RESET
-              </button>
+              <div class="startLocationDiv">
+                <label
+                  class="toBlock input2 labelStartLocation"
+                  for="startingLocationInput"
+                  >Starting Location:
+                </label>
+                <input
+                  class="nameTripInput inputStartInput"
+                  type="text"
+                  name="startingLocationInput"
+                  id="startingLocationInput"
+                />
+              </div>
+              <div class="tempDiv">
+                <p class="toBlock input2 pDesiredTemp">
+                  Desired Temperature Range:
+                </p>
+                <label
+                  for="minimumTempInput"
+                  class="toBlock input2 minTempLabel"
+                  >Minimum Temperature:
+                </label>
+                <input
+                  class="nameTripInput minTempInput"
+                  type="text"
+                  name="minimumTempInput"
+                  id="minimumTempInput"
+                />
+                <label
+                  class="toBlock input2 maxTempLabel"
+                  for="maximumTempInput"
+                  >Maximum Temperature:
+                </label>
+                <input
+                  class="nameTripInput maxTempInput"
+                  type="text"
+                  name="maximumTempInput"
+                  id="maximumTempInput"
+                />
+              </div>
+              <div class="sortByDiv">
+                <p class="pSortByTitle">Sort By:</p>
+                <label class="labelDistance" for="radioSortDistance"
+                  >Distance:</label
+                >
+                <input
+                  type="radio"
+                  name="sortInput"
+                  id="sortDistInput"
+                  value="distance"
+                  class="inputDistanceSort"
+                />
+                <div class="sortByTempDiv">
+                  <label class="labelTemp" for="radioSortTemp"
+                    >Temperature:</label
+                  >
+                  <input
+                    type="radio"
+                    name="sortInput"
+                    id="sortTempInput"
+                    value="temperature"
+                    class="inputTempSort"
+                  />
+                </div>
+              </div>
+              <div class="submitDiv">
+                <button class="submitTempButton submitMainForm" type="submit">
+                  FIND TRIP
+                </button>
+                <span class="spaceOutButtons"></span>
+                <button class="submitTempButton resetMainForm" type="reset">
+                  RESET
+                </button>
+              </div>
             </form>
           </div>
           <div class="spacerDivMainForm"></div>
-          <div class="outputTripFinder"></div>
+          <div class="outputTripFinder"><div></div></div>
         </div>
       </div>
     </div>
