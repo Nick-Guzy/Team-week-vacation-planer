@@ -124,96 +124,6 @@
 
 
 
-/***************************************/
-/***************************************/
-/***************************************/
-/*****************DARKER_GROTESQUE_BODY*/
-
-
-
-@font-face {
-    font-family: 'darker_grotesque';
-    src: url('../assets/fonts/darker_grotesque/darkergrotesque-black-webfont.woff2') format('woff2'),
-         url('../assets/fonts/darker_grotesque/darkergrotesque-black-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'darker_grotesque';
-    src: url('../assets/fonts/darker_grotesque/darkergrotesque-bold-webfont.woff2') format('woff2'),
-         url('../assets/fonts/darker_grotesque/darkergrotesque-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'darker_grotesque';
-    src: url('../assets/fonts/darker_grotesque/darkergrotesque-extrabold-webfont.woff2') format('woff2'),
-         url('../assets/fonts/darker_grotesque/darkergrotesque-extrabold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'darker_grotesque';
-    src: url('../assets/fonts/darker_grotesque/darkergrotesque-semibold-webfont.woff2') format('woff2'),
-         url('../assets/fonts/darker_grotesque/darkergrotesque-semibold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'darker_grotesque';
-    src: url('../assets/fonts/darker_grotesque/darkergrotesque-light-webfont.woff2') format('woff2'),
-         url('../assets/fonts/darker_grotesque/darkergrotesque-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'darker_grotesque';
-    src: url('../assets/fonts/darker_grotesque/darkergrotesque-medium-webfont.woff2') format('woff2'),
-         url('../assets/fonts/darker_grotesque/darkergrotesque-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'darker_grotesque';
-    src: url('../assets/fonts/darker_grotesque/darkergrotesque-regular-webfont.woff2') format('woff2'),
-         url('../assets/fonts/darker_grotesque/darkergrotesque-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
 
 /***************************************/
 /***************************************/
@@ -226,31 +136,58 @@
 
 
 body {
-    background-image: linear-gradient(to right, #572836, black);
-    color: whitesmoke;
-    height: 100vh;
-    padding: 0;
-    margin: 0px;
-    overflow: hidden;
-    
-  }
+  background-image: linear-gradient(to right, #572836, black);
+  color: whitesmoke;
+  height: 100vh;
+  padding: 0;
+  margin: 0px;
+  overflow: hidden;
+}
 
-  .headerOuter {
-    background-image: linear-gradient(to right, #c7f3ff, #578fff, #2d71b5, black);
-    border: 10px solid #2d71b5;
-    margin: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 0px;
-    padding-right: 40px;
-    width: 100vw;
-    display: flex;
-    color: black;
-  }
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  width: 20px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 20px;
+  background-color: #545454;
+  background-image: url(../assets/images/bermuda-diamond.svg);
+  border-radius: 10px;
+  background-size: cover;
+  background-position-x: 17px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  width: 20px;
+  background-color: #545454;
+  background-image: url(../assets/images/bermuda-diamond-medium.svg);
+  border-radius: 10px;
+  background-size: cover;
+  background-position-x: 17px;
+}
+
+.headerOuter {
+  background-image: linear-gradient(to right, #c7f3ff, #578fff, #2d71b5, black);
+  border: 5px solid #2d71b5;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 40px;
+  width: 100vw;
+  display: flex;
+  color: black;
+}
 .scaleToDivTitle {
   margin-top: auto;
   margin-bottom: auto;
-  height: 200px;
+  height: 120px;
   border-radius: 20px;
   margin-left: 20px;
   margin-right: 20px;
@@ -258,7 +195,7 @@ body {
 
 .SPACERDIV {
   height: auto;
-  width: 3.7%;
+  width: 34%;
 }
 .titleDiv {
   margin-top: auto;
@@ -270,74 +207,478 @@ body {
   font-size: 45pt;
   padding: 125px;
   padding-left: 135px;
-  padding-top: 55px;
-  padding-bottom: 55px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
 }
 .newTripDiv {
-  display: flex;
+display: flex;
 }
 
-  .gridTop {
-    margin-top: auto;
-    margin-bottom: auto;
-    display: grid;
-    grid-template-columns: 180px 180px ;
-    grid-template-rows: 80px 80px;
-    row-gap: 20px;
-    column-gap: 5px;
-  }
-  .buttonTop {
-    display: inline-block;
-    background-color: #805c66;
-    padding: 20px;
-    width: auto;
-    color: whitesmoke;
-    text-align: center;
-    border-radius: 20px;
-    font-size: 18pt;
-    font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    line-height: 0px;
-    box-shadow: 5px 5px 5px black;
-    transition: 0.4s;
-  }
-  .buttonTop:hover {
-    cursor:pointer;
-    background-color: #852240;
-  }
+.gridTop {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: grid;
+  grid-template-columns: 150px 150px ;
+  grid-template-rows: 45px 45px;
+  row-gap: 20px;
+  column-gap: 5px;
+}
+.buttonTop {
+  display: inline-block;
+  background-color: #805c66;
+  padding: 10px;
+  width: auto;
+  color: whitesmoke;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 14pt;
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 0px;
+  box-shadow: 5px 5px 5px black;
+  transition: 0.4s;
+}
+.buttonTop:hover {
+  cursor:pointer;
+  background-color: #852240;
+}
 
-  .buttonNewTrip {
-    grid-row: 2;
-    grid-column: span 2;
-    font-size: 23pt;
-    padding-top: auto;
-    padding-bottom: auto;
-    line-height: 0px;
-    letter-spacing: 2px;
-  }
+.buttonNewTrip {
+  grid-row: 2;
+  grid-column: span 2;
+  font-size: 18pt;
+  padding-top: auto;
+  padding-bottom: auto;
+  line-height: 0px;
+  letter-spacing: 2px;
+}
 
-  .subtitleP {
-    color: black;
-    font-size: 20pt;
-    margin: 0px;
-    margin-top: 8px;
-    margin-left: 202px;
-    font-style: italic;
-  }
+.subtitleP {
+  color: black;
+  font-size: 20pt;
+  margin: 0px;
+  margin-top: 8px;
+  margin-left: 202px;
+  font-style: italic;
+}
 
-  .forAthena {
-    background-image: url(../assets/images/d7_opac37_ALPHA_Athènes_Acropole_Caryatides.png);
-    height: 1100px;
-    width: 1300px;
-    z-index: 20;
-    background-size: contain;
-    background-repeat: no-repeat;
-    float: right;
-  }
+.forAthena {
+  background-image: url(../assets/images/d7_opac37_ALPHA_Athènes_Acropole_Caryatides.png);
+  height: 1100px;
+  width: 1300px;
+  z-index: 20;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 0;
+  position: fixed;
+}
 
-  .flexBackground {
-    float: right;
-  }
+.forFlexAside {
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  background-color: #1d3054;
+  background-image: linear-gradient(to bottom, #7818de, #1d3054, #131f38);
+  border-right: 5px solid #1d3054;
+}
+
+.yourTrips {
+  width: 100%;
+  height: 5%;
+  color: whitesmoke;
+  background-image: linear-gradient(to bottom, #852240, #421120);
+  background-color: #852240;
+  border-bottom-right-radius: 70px;
+  box-shadow: 4px 4px 4px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pYourTrips {
+  color: whitesmoke;
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: max-content;
+  height: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16pt;
+}
+
+.overFlowAside {
+  overflow-y: auto;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.TEMPLATEsave {
+  width: 90%;
+  height: 5%;
+  color: whitesmoke;
+  background-color: #805c66;
+  background-image: linear-gradient(to bottom, #805c66, #453237);
+  box-shadow: 4px 4px 4px black;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 13px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.8s;
+  overflow: hidden;
+}
+
+
+.TEMPLATEsave:hover {
+  background-image: linear-gradient(to bottom, #852240, #421120);
+  cursor: pointer;
+}
+.flexRightBody {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.outerDivTripFinder {
+  width: 76%;
+  height: 84%;
+  z-index: 30;
+  display: absolute;
+  margin-left: 2%;
+  margin-top: 1%;
+  border: 4px solid whitesmoke;
+  overflow: hidden;
+  background-image: url(../assets/images/flat-mountains.svg);
+  background-position: right;
+  background-position: bottom;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+}
+
+.tripFinderTitleDiv {
+  background-color: black;
+  width: 100%;
+  height: max-content;
+
+
+}
+
+.pTripFinder {
+  color: whitesmoke;
+  margin: 0;
+  font-size: 28pt;
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 16px;
+}
+
+.nameTripDiv {
+  background-color: #545454;
+  padding: 10px;
+  padding-left: 16px;
+  font-size: 16pt;
+  padding-left: 20px;
+}
+
+.nameTripInput {
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  margin-left: 10px;
+  height: 20px;
+  font-size: 14pt;
+}
+
+.submitNameButton {
+  height: max-content;
+  font-size: 14pt;
+  padding: 5px;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: whitesmoke;
+  margin-left: 15px;
+  background-color: #4d1425;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: 0.05s;
+}
+
+.submitNameButton:hover {
+  background-color: #4877d4;
+  box-shadow: 0px 0px 25px whitesmoke;
+  cursor: pointer;
+}
+
+.divHoldInputAndOutput {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+.inputTripFinder {
+  height: 100%;
+  width: 38.2%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom-right-radius: 20px;
+
+}
+
+.spacerDivMainForm {
+  width: 3%;
+  height: auto;
+}
+
+.outputTripFinder {
+  margin-top: 18px;
+  height: 84%;
+  width: 56%;
+  background-color: rgba(225, 225, 225, 0.7);
+  border-radius: 20px;
+  border: 4px solid black
+}
+
+.toBlock {
+  display: block;
+}
+
+.input2 {
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18pt;
+}
+
+.labelStartLocation {
+  margin-left: 40px;
+}
+
+.inputStartInput {
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.startLocationDiv {
+  background-color: rgba(227, 70, 45, 0.3);
+  /*background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0), rgba(0,0,0,0.8)), url(../assets/images/tortoise-shell-reddened.svg);*/
+  width: 95%;
+  border-radius: 20px;
+  margin-left: 15px;
+  height: max-content;
+  padding-top: 15px;
+  margin-top: 12px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 10px black;
+}
+.tempDiv {
+  background-color: rgba(227, 70, 45, 0.3);
+  /*background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0), rgba(0,0,0,0.8)), url(../assets/images/tortoise-shell-reddened.svg);*/
+  width: 95%;
+  border-radius: 20px;
+  margin-left: 15px;
+  height: max-content;
+  padding-top: 10px;
+  margin-top: 5px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 10px black;
+}
+.pDesiredTemp {
+  margin: 15px;
+  margin-left: 37px;
+  margin-top: 10px;
+}
+
+.minTempLabel {
+  margin-bottom: 5px;
+  margin-left: 50px;
+}
+
+.minTempInput {
+  margin: 10px;
+  margin-top: 5px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.maxTempLabel {
+  margin-bottom: 5px;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.maxTempInput {
+  margin-left: 50px;
+  margin-bottom: 25px;
+}
+
+.submitDiv {
+  margin-top: 37.5%;
+}
+
+.spaceOutButtons {
+  width: 54%;
+  display: inline-block;
+}
+.submitTempButton {
+  height: max-content;
+  font-size: 14pt;
+  padding: 5px;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: whitesmoke;
+  margin-left: 15px;
+  background-color: #4d1425;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: 0.1s;
+}
+.submitTempButton:hover {
+  box-shadow: 0px 0px 10px whitesmoke;
+  cursor: pointer;
+}
+
+.sortByDiv {
+  background-color: rgba(227, 70, 45, 0.3);
+  /*background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0), rgba(0,0,0,0.8)), url(../assets/images/tortoise-shell-reddened.svg);*/
+  width: 95%;
+  border-radius: 20px;
+  margin-left: 15px;
+  height: max-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 5px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 10px black;
+}
+
+.pSortByTitle {
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18pt;
+  margin: 15px;
+  margin-left: 37px;
+  margin-top: 10px;
+}
+
+.labelDistance {
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18pt;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+
+.inputDistanceSort {
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18pt;
+  margin: 15px;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-bottom: 0px;
+}
+
+.labelTemp {
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18pt;
+  margin-left: 5px;
+}
+
+
+
+.sortByTempDiv {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 10px;
+  height: max-content;
+}
+
+.sortByDistDiv {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  height: max-content;
+  margin-bottom: 10px;
+}
+
+.inputTempSort {
+  background-color: black;
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18pt;
+  margin: 15px;
+  margin-left: 50px;
+  
+}
+
+.labelPrice {
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18pt;
+  margin-bottom: 25px;
+  margin-left: 5px;
+}
+
+.inputPriceSort {
+  background-color: black;
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18pt;
+  margin: 15px;
+  margin-left: 50px;
+  transform: translateY(-12.5px);
+}
+
+.tempOption {
+  color: whitesmoke;
+  background-color: black;
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  bottom: 100%;
+
+}
+
+.minTempDropdown {
+  width: 185px;
+  background-color: black;
+  color: whitesmoke;
+  margin-top: 10px;
+  margin-left: 105px;
+  margin-bottom: 30px;
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+}
+
+.maxTempDropdown {
+  width: 185px;
+  background-color: black;
+  color: whitesmoke;
+  margin-top: 10px;
+  margin-left: 105px;
+  margin-bottom: 20px;
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+}
+
+.startingAirportDropdown {
+  width: 300px;
+  background-color: black;
+  color: whitesmoke;
+  margin-top: 10px;
+  margin-left: 105px;
+  margin-bottom: 30px;
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+}
+
+.airportSelect {
+  color: whitesmoke;
+  background-color: black;
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  bottom: 100%;
+
+}

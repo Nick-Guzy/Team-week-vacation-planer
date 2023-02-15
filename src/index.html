@@ -25,8 +25,535 @@
         />
       </div>
     </div>
-    <div class="flexBackground">
-      <div class="forAthena"></div>
+    <div class="forAthena"></div>
+    <div class="flexRightBody">
+      <div class="forFlexAside">
+        <div class="yourTrips"><p class="pYourTrips">YOUR TRIPS</p></div>
+        <div class="overFlowAside">
+          <div class="TEMPLATEsave">
+            <p class="pYourTrips">"O BLOCK", Chicago, Il.</p>
+          </div>
+          <div class="TEMPLATEsave">
+            <p class="pYourTrips">"Marquam Park", Portland, Or.</p>
+          </div>
+          <div class="TEMPLATEsave">
+            <p class="pYourTrips">"Min. of Brew.", Baltimore, Md.</p>
+          </div>
+          <!--<div class="TEMPLATEsave">
+            <p class="pYourTrips">TEST</p>
+          </div>
+          <div class="TEMPLATEsave">
+            <p class="pYourTrips">TEST</p>
+          </div>
+          <div class="TEMPLATEsave">
+            <p class="pYourTrips">TEST</p>
+          </div>
+          <div class="TEMPLATEsave">
+            <p class="pYourTrips">TEST</p>
+          </div>
+          <div class="TEMPLATEsave">
+            <p class="pYourTrips">TEST</p>
+          </div>
+          <div class="TEMPLATEsave">
+            <p class="pYourTrips">TEST</p>
+          </div>
+          <div class="TEMPLATEsave">
+            <p class="pYourTrips">TEST</p>
+          </div>
+          <div class="TEMPLATEsave">
+            <p class="pYourTrips">TEST</p>
+          </div>
+          <div class="TEMPLATEsave">
+            <p class="pYourTrips">TEST</p>
+          </div>
+          <div class="TEMPLATEsave">
+            <p class="pYourTrips">TEST</p>
+          </div>
+          <div class="TEMPLATEsave">
+            <p class="pYourTrips">TEST</p>
+          </div>
+          <div class="TEMPLATEsave">
+            <p class="pYourTrips">TEST</p>
+          </div>
+          <div class="TEMPLATEsave">
+            <p class="pYourTrips">TEST.</p>
+          </div>
+          <div class="TEMPLATEsave">
+            <p class="pYourTrips">TEST</p>
+          </div>
+          <div class="TEMPLATEsave">
+            <p class="pYourTrips">TEST</p>
+          </div>-->
+        </div>
+      </div>
+      <div class="outerDivTripFinder">
+        <div class="tripFinderTitleDiv">
+          <p class="pTripFinder">TRIP FINDER</p>
+        </div>
+        <div class="nameTripDiv">
+          <form>
+            <label for="nameTrip">NAME TRIP: </label>
+            <input type="text" class="nameTripInput" id="nameTrip" />
+            <button class="submitNameButton" type="submit">SAVE TRIP</button>
+          </form>
+        </div>
+        <div class="divHoldInputAndOutput">
+          <div class="inputTripFinder">
+            <form class="mainInput">
+              <div class="startLocationDiv">
+                <label
+                  class="toBlock input2 labelStartLocation"
+                  for="startingLocationInput"
+                  >Select Closest Starting Airport:
+                </label>
+                <select name="startingAirpotDropdown" id="startingAirpotDropdown" class="startingAirportDropdown">
+                  <option class="airportSelect" value="0">-- Starting Aiport --</option>
+                  <option class="airportSelect" value="ATL">ATL, Atlanta, GA</option>
+                  <option class="airportSelect" value="DFW">DFW, Dallas, TX</option>
+                  <option class="airportSelect" value="DEN">DEN, Denver, CO</option>
+                  <option class="airportSelect" value="ORD">ORD, Chicago, IL</option>
+                  <option class="airportSelect" value="LAX">LAX, Los Angeles, CA</option>
+                  <option class="airportSelect" value="CLT">CLT, Charlotte, NC</option>
+                  <option class="airportSelect" value="MCO">MCO, Orlando, FL</option>
+                  <option class="airportSelect" value="LAS">LAS, Las Vegas, NV</option>
+                  <option class="airportSelect" value="PHX">PHX, Phoenix, NV</option>
+                  <option class="airportSelect" value="MIA">MIA, Miami, FL</option>
+                  <option class="airportSelect" value="SEA">SEA, Seattle, WA</option>
+                  <option class="airportSelect" value="IAH">IAH, Houston, TX</option>
+                  <option class="airportSelect" value="JFK">JFK, New York City, NY</option>
+                  <option class="airportSelect" value="EWR">EWR, Newark, NJ</option>
+                  <option class="airportSelect" value="FLL">FLL, Fort Lauderdale, FL</option>
+                  <option class="airportSelect" value="MSP">MSP, Minneapolis, MN</option>
+                  <option class="airportSelect" value="SFO">SFO, San Francisco, CA</option>
+                  <option class="airportSelect" value="DTW">DTW, Detroit, MI</option>
+                  <option class="airportSelect" value="BOS">BOS, Boston, MA</option>
+                  <option class="airportSelect" value="SLC">SLC, Salt Lake City, UT</option>
+                  <option class="airportSelect" value="PHL">PHL, Philadelphia, PA</option>
+                  <option class="airportSelect" value="BWI">BWI, Baltimore, MD</option>
+                  <option class="airportSelect" value="TPA">TPA, Tampa, FL</option>
+                  <option class="airportSelect" value="SAN">SAN, San Diego, CA</option>
+                  <option class="airportSelect" value="LGA">LGA, New York City, NY</option>
+                  <option class="airportSelect" value="MDW">MDW, Chicago, IL</option>
+                  <option class="airportSelect" value="BNA">BNA, Nashville, TN</option>
+                  <option class="airportSelect" value="IAD">IAD, Washington D.C., VA</option>
+                  <option class="airportSelect" value="VA">VA, Washington D.C., DCA</option>
+                  <option class="airportSelect" value="AUS">AUS, Austin, TX</option>
+                  <option class="airportSelect" value="DAL">DAL, Dallas, TX</option>
+                  <option class="airportSelect" value="HNL">HNL, Honolulu, HI</option>
+                  <option class="airportSelect" value="PDX">PDX, Portland, OR</option>
+                  <option class="airportSelect" value="HOU">HOU, Houston, TX</option>
+                  <option class="airportSelect" value="RSW">RSW, Fort Myers, FL</option>
+                  <option class="airportSelect" value="STL">STL, St. Louis, MO</option>
+                  <option class="airportSelect" value="SMF">SMF, Sacramento, CA</option>
+                  <option class="airportSelect" value="RDU">RDU, Raleigh, NC</option>
+                  <option class="airportSelect" value="MSY">MSY, New Orleans, LA</option>
+                  <option class="airportSelect" value="OAK">OAK, Oakland, CA</option>
+                  <option class="airportSelect" value="MCI">MCI, Kansas City, MO</option>
+                  <option class="airportSelect" value="SAT">SAT, San Antonio, TX</option>
+                  <option class="airportSelect" value="SJC">SJC, San Jose, CA</option>
+                  <option class="airportSelect" value="CLE">CLE, Cleveland, OH</option>
+                  <option class="airportSelect" value="IND">IND, Indianapolis, IND</option>
+                  <option class="airportSelect" value="PIT">PIT, Pittsburgh, PA</option>
+                  <option class="airportSelect" value="CVG">CVG, Cincinnati, OH</option>
+                  <option class="airportSelect" value="OGG">OGG, Kahului, HI</option>
+                  <option class="airportSelect" value="CMH">CMH, Colombus, OH</option>
+                  <option class="airportSelect" value="PBI">PBI, West Palm Beach, FL</option>
+                  <option class="airportSelect" value="JAX">JAX, Jacksonville, FL</option>
+                  <option class="airportSelect" value="BDL">BDL, Hartford, CT</option>
+                  <option class="airportSelect" value="MKE">MKE, Milkwaukee, WI</option>
+                  <option class="airportSelect" value="ONT">ONT, Ontario, CA</option>
+                  <option class="airportSelect" value="ANC">ANC, Anchorage, AK</option>
+                  <option class="airportSelect" value="CHS">CHS, Charleston, SC</option>
+                  <option class="airportSelect" value="BUR">BUR, Burbank, CA</option>
+                  <option class="airportSelect" value="OMA">OMA, Omaha, NE</option>
+                  <option class="airportSelect" value="BOI">BOI, Boise, ID</option>
+                  <option class="airportSelect" value="MEM">MEM, Memphis, TN</option>
+                  <option class="airportSelect" value="RNO">RNO, Reno, NV</option>
+                  <option class="airportSelect" value="ABQ">ABQ, Alburquerque. NM</option>
+                  <option class="airportSelect" value="ORF">ORF, Norfolk, VA</option>
+                </select>
+                <!--<input
+                  class="nameTripInput inputStartInput"
+                  type="text"
+                  name="startingLocationInput"
+                  id="startingLocationInput"
+                />-->
+              </div>
+              <div class="tempDiv">
+                <p class="toBlock input2 pDesiredTemp">
+                  Desired Temperature Range:
+                </p>
+                <label
+                  class="toBlock input2 maxTempLabel"
+                  for="maximumTempInput"
+                  >Maximum Temperature:
+                </label>
+                <select class="maxTempDropdown" name="maxTempDropdown" id="maxTempDropdown" size="1">
+                  <option class="tempOption" value="A">-- Max. Temp. --</option>
+                  <option class="tempOption" value="120">120 &#8457</option>
+                  <option class="tempOption" value="119">119 &#8457</option>
+                  <option class="tempOption" value="118">118 &#8457</option>
+                  <option class="tempOption" value="117">117 &#8457</option>
+                  <option class="tempOption" value="116">116 &#8457</option>
+                  <option class="tempOption" value="115">115 &#8457</option>
+                  <option class="tempOption" value="114">114 &#8457</option>
+                  <option class="tempOption" value="113">113 &#8457</option>
+                  <option class="tempOption" value="112">112 &#8457</option>
+                  <option class="tempOption" value="111">111 &#8457</option>
+                  <option class="tempOption" value="110">110 &#8457</option>
+                  <option class="tempOption" value="109">109 &#8457</option>
+                  <option class="tempOption" value="108">108 &#8457</option>
+                  <option class="tempOption" value="107">107 &#8457</option>
+                  <option class="tempOption" value="106">106 &#8457</option>
+                  <option class="tempOption" value="105">105 &#8457</option>
+                  <option class="tempOption" value="104">104 &#8457</option>
+                  <option class="tempOption" value="103">103 &#8457</option>
+                  <option class="tempOption" value="102">102 &#8457</option>
+                  <option class="tempOption" value="101">101 &#8457</option>
+                  <option class="tempOption" value="100">100 &#8457</option>
+                  <option class="tempOption" value="99">99 &#8457</option>
+                  <option class="tempOption" value="98">98 &#8457</option>
+                  <option class="tempOption" value="97">97 &#8457</option>
+                  <option class="tempOption" value="96">96 &#8457</option>
+                  <option class="tempOption" value="95">95 &#8457</option>
+                  <option class="tempOption" value="94">94 &#8457</option>
+                  <option class="tempOption" value="93">93 &#8457</option>
+                  <option class="tempOption" value="92">92 &#8457</option>
+                  <option class="tempOption" value="91">91 &#8457</option>
+                  <option class="tempOption" value="90">90 &#8457</option>
+                  <option class="tempOption" value="89">89 &#8457</option>
+                  <option class="tempOption" value="88">88 &#8457</option>
+                  <option class="tempOption" value="87">87 &#8457</option>
+                  <option class="tempOption" value="86">86 &#8457</option>
+                  <option class="tempOption" value="85">85 &#8457</option>
+                  <option class="tempOption" value="84">84 &#8457</option>
+                  <option class="tempOption" value="83">83 &#8457</option>
+                  <option class="tempOption" value="82">82 &#8457</option>
+                  <option class="tempOption" value="81">81 &#8457</option>
+                  <option class="tempOption" value="80">80 &#8457</option>
+                  <option class="tempOption" value="79">79 &#8457</option>
+                  <option class="tempOption" value="78">78 &#8457</option>
+                  <option class="tempOption" value="77">77 &#8457</option>
+                  <option class="tempOption"value="76">76 &#8457</option>
+                  <option class="tempOption" value="75">75 &#8457</option>
+                  <option class="tempOption" value="74">74 &#8457</option>
+                  <option class="tempOption" value="73">73 &#8457</option>
+                  <option class="tempOption" value="72">72 &#8457</option>
+                  <option class="tempOption" value="71">71 &#8457</option>
+                  <option class="tempOption" value="70">70 &#8457</option>
+                  <option class="tempOption" value="69">69 &#8457</option>
+                  <option class="tempOption" value="68">68 &#8457</option>
+                  <option class="tempOption" value="67">67 &#8457</option>
+                  <option class="tempOption" value="66">66 &#8457</option>
+                  <option class="tempOption" value="65">65 &#8457</option>
+                  <option class="tempOption" value="64">64 &#8457</option>
+                  <option class="tempOption" value="63">63 &#8457</option>
+                  <option class="tempOption" value="62">62 &#8457</option>
+                  <option class="tempOption" value="61">61 &#8457</option>
+                  <option class="tempOption" value="60">60 &#8457</option>
+                  <option class="tempOption" value="59">59 &#8457</option>
+                  <option class="tempOption" value="58">58 &#8457</option>
+                  <option class="tempOption" value="57">57 &#8457</option>
+                  <option class="tempOption" value="56">56 &#8457</option>
+                  <option class="tempOption" value="55">55 &#8457</option>
+                  <option class="tempOption" value="54">54 &#8457</option>
+                  <option class="tempOption" value="53">53 &#8457</option>
+                  <option class="tempOption" value="52">52 &#8457</option>
+                  <option class="tempOption" value="51">51 &#8457</option>
+                  <option class="tempOption" value="50">50 &#8457</option>
+                  <option class="tempOption" value="49">49 &#8457</option>
+                  <option class="tempOption" value="48">48 &#8457</option>
+                  <option class="tempOption" value="47">47 &#8457</option>
+                  <option class="tempOption" value="46">46 &#8457</option>
+                  <option class="tempOption" value="45">45 &#8457</option>
+                  <option class="tempOption" value="44">44 &#8457</option>
+                  <option class="tempOption" value="43">43 &#8457</option>
+                  <option class="tempOption" value="42">42 &#8457</option>
+                  <option class="tempOption" value="41">41 &#8457</option>
+                  <option class="tempOption" value="40">40 &#8457</option>
+                  <option class="tempOption" value="39">39 &#8457</option>
+                  <option class="tempOption" value="38">38 &#8457</option>
+                  <option class="tempOption" value="37">37 &#8457</option>
+                  <option class="tempOption" value="36">36 &#8457</option>
+                  <option class="tempOption" value="35">35 &#8457</option>
+                  <option class="tempOption" value="34">34 &#8457</option>
+                  <option class="tempOption" value="33">33 &#8457</option>
+                  <option class="tempOption" value="32">32 &#8457</option>
+                  <option class="tempOption" value="31">31 &#8457</option>
+                  <option class="tempOption" value="30">30 &#8457</option>
+                  <option class="tempOption" value="29">29 &#8457</option>
+                  <option class="tempOption" value="28">28 &#8457</option>
+                  <option class="tempOption" value="27">27 &#8457</option>
+                  <option class="tempOption" value="26">26 &#8457</option>
+                  <option class="tempOption" value="25">25 &#8457</option>
+                  <option class="tempOption" value="24">24 &#8457</option>
+                  <option class="tempOption" value="23">23 &#8457</option>
+                  <option class="tempOption" value="22">22 &#8457</option>
+                  <option class="tempOption" value="21">21 &#8457</option>
+                  <option class="tempOption" value="20">20 &#8457</option>
+                  <option class="tempOption" value="19">19 &#8457</option>
+                  <option class="tempOption" value="18">18 &#8457</option>
+                  <option class="tempOption" value="17">17 &#8457</option>
+                  <option class="tempOption" value="16">16 &#8457</option>
+                  <option class="tempOption" value="15">15 &#8457</option>
+                  <option class="tempOption" value="14">14 &#8457</option>
+                  <option class="tempOption" value="13">13 &#8457</option>
+                  <option class="tempOption" value="12">12 &#8457</option>
+                  <option class="tempOption" value="11">11 &#8457</option>
+                  <option class="tempOption" value="10">10 &#8457</option>
+                  <option class="tempOption" value="9">9 &#8457</option>
+                  <option class="tempOption" value="8">8 &#8457</option>
+                  <option class="tempOption" value="7">7 &#8457</option>
+                  <option class="tempOption" value="6">6 &#8457</option>
+                  <option class="tempOption" value="5">5 &#8457</option>
+                  <option class="tempOption" value="4">4 &#8457</option>
+                  <option class="tempOption" value="3">3 &#8457</option>
+                  <option class="tempOption" value="2">2 &#8457</option>
+                  <option class="tempOption" value="1">1 &#8457</option>
+                  <option class="tempOption" value="0">0 &#8457</option>
+                  <option class="tempOption" value="-1">-1 &#8457</option>
+                  <option class="tempOption" value="-2">-2 &#8457</option>
+                  <option class="tempOption" value="-3">-3 &#8457</option>
+                  <option class="tempOption" value="-4">-4 &#8457</option>
+                  <option class="tempOption" value="-5">-5 &#8457</option>
+                  <option class="tempOption" value="-6">-6 &#8457</option>
+                  <option class="tempOption" value="-7">-7 &#8457</option>
+                  <option class="tempOption" value="-8">-8 &#8457</option>
+                  <option class="tempOption" value="-9">-9 &#8457</option>
+                  <option class="tempOption" value="-10">-10 &#8457</option>
+                  <option class="tempOption" value="-11">-11 &#8457</option>
+                  <option class="tempOption" value="-12">-12 &#8457</option>
+                  <option class="tempOption" value="-13">-13 &#8457</option>
+                  <option class="tempOption" value="-14">-14 &#8457</option>
+                  <option class="tempOption" value="-15">-15 &#8457</option>
+                  <option class="tempOption" value="-16">-16 &#8457</option>
+                  <option class="tempOption" value="-17">-17 &#8457</option>
+                  <option class="tempOption" value="-18">-18 &#8457</option>
+                  <option class="tempOption" value="-19">-19 &#8457</option>
+                  <option class="tempOption" value="-20">-20 &#8457</option>
+                </select>
+                <label
+                  for="minimumTempInput"
+                  class="toBlock input2 minTempLabel"
+                  >Minimum Temperature:
+                </label>
+                <select class="minTempDropdown" name="minTempDropdown" id="minTempDropdown" size="1">
+                  <option class="tempOption" value="A">-- Min. Temp. --</option>
+                  <option class="tempOption" value="120">120 &#8457</option>
+                  <option class="tempOption" value="119">119 &#8457</option>
+                  <option class="tempOption" value="118">118 &#8457</option>
+                  <option class="tempOption" value="117">117 &#8457</option>
+                  <option class="tempOption" value="116">116 &#8457</option>
+                  <option class="tempOption" value="115">115 &#8457</option>
+                  <option class="tempOption" value="114">114 &#8457</option>
+                  <option class="tempOption" value="113">113 &#8457</option>
+                  <option class="tempOption" value="112">112 &#8457</option>
+                  <option class="tempOption" value="111">111 &#8457</option>
+                  <option class="tempOption" value="110">110 &#8457</option>
+                  <option class="tempOption" value="109">109 &#8457</option>
+                  <option class="tempOption" value="108">108 &#8457</option>
+                  <option class="tempOption" value="107">107 &#8457</option>
+                  <option class="tempOption" value="106">106 &#8457</option>
+                  <option class="tempOption" value="105">105 &#8457</option>
+                  <option class="tempOption" value="104">104 &#8457</option>
+                  <option class="tempOption" value="103">103 &#8457</option>
+                  <option class="tempOption" value="102">102 &#8457</option>
+                  <option class="tempOption" value="101">101 &#8457</option>
+                  <option class="tempOption" value="100">100 &#8457</option>
+                  <option class="tempOption" value="99">99 &#8457</option>
+                  <option class="tempOption" value="98">98 &#8457</option>
+                  <option class="tempOption" value="97">97 &#8457</option>
+                  <option class="tempOption" value="96">96 &#8457</option>
+                  <option class="tempOption" value="95">95 &#8457</option>
+                  <option class="tempOption" value="94">94 &#8457</option>
+                  <option class="tempOption" value="93">93 &#8457</option>
+                  <option class="tempOption" value="92">92 &#8457</option>
+                  <option class="tempOption" value="91">91 &#8457</option>
+                  <option class="tempOption" value="90">90 &#8457</option>
+                  <option class="tempOption" value="89">89 &#8457</option>
+                  <option class="tempOption" value="88">88 &#8457</option>
+                  <option class="tempOption" value="87">87 &#8457</option>
+                  <option class="tempOption" value="86">86 &#8457</option>
+                  <option class="tempOption" value="85">85 &#8457</option>
+                  <option class="tempOption" value="84">84 &#8457</option>
+                  <option class="tempOption" value="83">83 &#8457</option>
+                  <option class="tempOption" value="82">82 &#8457</option>
+                  <option class="tempOption" value="81">81 &#8457</option>
+                  <option class="tempOption" value="80">80 &#8457</option>
+                  <option class="tempOption" value="79">79 &#8457</option>
+                  <option class="tempOption" value="78">78 &#8457</option>
+                  <option class="tempOption" value="77">77 &#8457</option>
+                  <option class="tempOption"value="76">76 &#8457</option>
+                  <option class="tempOption" value="75">75 &#8457</option>
+                  <option class="tempOption" value="74">74 &#8457</option>
+                  <option class="tempOption" value="73">73 &#8457</option>
+                  <option class="tempOption" value="72">72 &#8457</option>
+                  <option class="tempOption" value="71">71 &#8457</option>
+                  <option class="tempOption" value="70">70 &#8457</option>
+                  <option class="tempOption" value="69">69 &#8457</option>
+                  <option class="tempOption" value="68">68 &#8457</option>
+                  <option class="tempOption" value="67">67 &#8457</option>
+                  <option class="tempOption" value="66">66 &#8457</option>
+                  <option class="tempOption" value="65">65 &#8457</option>
+                  <option class="tempOption" value="64">64 &#8457</option>
+                  <option class="tempOption" value="63">63 &#8457</option>
+                  <option class="tempOption" value="62">62 &#8457</option>
+                  <option class="tempOption" value="61">61 &#8457</option>
+                  <option class="tempOption" value="60">60 &#8457</option>
+                  <option class="tempOption" value="59">59 &#8457</option>
+                  <option class="tempOption" value="58">58 &#8457</option>
+                  <option class="tempOption" value="57">57 &#8457</option>
+                  <option class="tempOption" value="56">56 &#8457</option>
+                  <option class="tempOption" value="55">55 &#8457</option>
+                  <option class="tempOption" value="54">54 &#8457</option>
+                  <option class="tempOption" value="53">53 &#8457</option>
+                  <option class="tempOption" value="52">52 &#8457</option>
+                  <option class="tempOption" value="51">51 &#8457</option>
+                  <option class="tempOption" value="50">50 &#8457</option>
+                  <option class="tempOption" value="49">49 &#8457</option>
+                  <option class="tempOption" value="48">48 &#8457</option>
+                  <option class="tempOption" value="47">47 &#8457</option>
+                  <option class="tempOption" value="46">46 &#8457</option>
+                  <option class="tempOption" value="45">45 &#8457</option>
+                  <option class="tempOption" value="44">44 &#8457</option>
+                  <option class="tempOption" value="43">43 &#8457</option>
+                  <option class="tempOption" value="42">42 &#8457</option>
+                  <option class="tempOption" value="41">41 &#8457</option>
+                  <option class="tempOption" value="40">40 &#8457</option>
+                  <option class="tempOption" value="39">39 &#8457</option>
+                  <option class="tempOption" value="38">38 &#8457</option>
+                  <option class="tempOption" value="37">37 &#8457</option>
+                  <option class="tempOption" value="36">36 &#8457</option>
+                  <option class="tempOption" value="35">35 &#8457</option>
+                  <option class="tempOption" value="34">34 &#8457</option>
+                  <option class="tempOption" value="33">33 &#8457</option>
+                  <option class="tempOption" value="32">32 &#8457</option>
+                  <option class="tempOption" value="31">31 &#8457</option>
+                  <option class="tempOption" value="30">30 &#8457</option>
+                  <option class="tempOption" value="29">29 &#8457</option>
+                  <option class="tempOption" value="28">28 &#8457</option>
+                  <option class="tempOption" value="27">27 &#8457</option>
+                  <option class="tempOption" value="26">26 &#8457</option>
+                  <option class="tempOption" value="25">25 &#8457</option>
+                  <option class="tempOption" value="24">24 &#8457</option>
+                  <option class="tempOption" value="23">23 &#8457</option>
+                  <option class="tempOption" value="22">22 &#8457</option>
+                  <option class="tempOption" value="21">21 &#8457</option>
+                  <option class="tempOption" value="20">20 &#8457</option>
+                  <option class="tempOption" value="19">19 &#8457</option>
+                  <option class="tempOption" value="18">18 &#8457</option>
+                  <option class="tempOption" value="17">17 &#8457</option>
+                  <option class="tempOption" value="16">16 &#8457</option>
+                  <option class="tempOption" value="15">15 &#8457</option>
+                  <option class="tempOption" value="14">14 &#8457</option>
+                  <option class="tempOption" value="13">13 &#8457</option>
+                  <option class="tempOption" value="12">12 &#8457</option>
+                  <option class="tempOption" value="11">11 &#8457</option>
+                  <option class="tempOption" value="10">10 &#8457</option>
+                  <option class="tempOption" value="9">9 &#8457</option>
+                  <option class="tempOption" value="8">8 &#8457</option>
+                  <option class="tempOption" value="7">7 &#8457</option>
+                  <option class="tempOption" value="6">6 &#8457</option>
+                  <option class="tempOption" value="5">5 &#8457</option>
+                  <option class="tempOption" value="4">4 &#8457</option>
+                  <option class="tempOption" value="3">3 &#8457</option>
+                  <option class="tempOption" value="2">2 &#8457</option>
+                  <option class="tempOption" value="1">1 &#8457</option>
+                  <option class="tempOption" value="0">0 &#8457</option>
+                  <option class="tempOption" value="-1">-1 &#8457</option>
+                  <option class="tempOption" value="-2">-2 &#8457</option>
+                  <option class="tempOption" value="-3">-3 &#8457</option>
+                  <option class="tempOption" value="-4">-4 &#8457</option>
+                  <option class="tempOption" value="-5">-5 &#8457</option>
+                  <option class="tempOption" value="-6">-6 &#8457</option>
+                  <option class="tempOption" value="-7">-7 &#8457</option>
+                  <option class="tempOption" value="-8">-8 &#8457</option>
+                  <option class="tempOption" value="-9">-9 &#8457</option>
+                  <option class="tempOption" value="-10">-10 &#8457</option>
+                  <option class="tempOption" value="-11">-11 &#8457</option>
+                  <option class="tempOption" value="-12">-12 &#8457</option>
+                  <option class="tempOption" value="-13">-13 &#8457</option>
+                  <option class="tempOption" value="-14">-14 &#8457</option>
+                  <option class="tempOption" value="-15">-15 &#8457</option>
+                  <option class="tempOption" value="-16">-16 &#8457</option>
+                  <option class="tempOption" value="-17">-17 &#8457</option>
+                  <option class="tempOption" value="-18">-18 &#8457</option>
+                  <option class="tempOption" value="-19">-19 &#8457</option>
+                  <option class="tempOption" value="-20">-20 &#8457</option>
+                </select>
+                <!--<label
+                  for="minimumTempInput"
+                  class="toBlock input2 minTempLabel"
+                  >Minimum Temperature:
+                </label>
+                <input
+                  class="nameTripInput minTempInput"
+                  type="text"
+                  name="minimumTempInput"
+                  id="minimumTempInput"
+                />-->
+                
+                <!--<input
+                  class="nameTripInput maxTempInput"
+                  type="text"
+                  name="maximumTempInput"
+                  id="maximumTempInput"
+                />-->
+              </div>
+              <div class="sortByDiv">
+                <p class="pSortByTitle">Sort By:</p>
+                <div class="sortByDistDiv">
+                  <input
+                    type="radio"
+                    name="sortInput"
+                    id="sortDistInput"
+                    value="distance"
+                    class="inputDistanceSort"
+                  />
+                  <label class="labelDistance" for="radioSortDistance"
+                    >Distance</label
+                  >
+                </div>
+                <div class="sortByTempDiv">
+                  <input
+                    type="radio"
+                    name="sortInput"
+                    id="sortTempInput"
+                    value="temperature"
+                    class="inputTempSort"
+                  />
+                  <label class="labelTemp" for="radioSortTemp"
+                    >Temperature</label
+                  >
+                </div>
+                <div class="sortByTempDiv">
+                  <input
+                    type="radio"
+                    name="sortInput"
+                    id="sortPriceInput"
+                    value="price"
+                    class="inputPriceSort"
+                  />
+                  <label class="labelPrice" for="radioSortTemp"
+                    >Price</label
+                  >
+                </div>
+              </div>
+              <div class="submitDiv">
+                <button class="submitTempButton submitMainForm" type="submit">
+                  FIND TRIP
+                </button>
+                <span class="spaceOutButtons"></span>
+                <button class="submitTempButton resetMainForm" type="reset">
+                  RESET
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="spacerDivMainForm"></div>
+          <div class="outputTripFinder"><div></div></div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
