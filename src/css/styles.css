@@ -512,7 +512,7 @@ display: flex;
 }
 
 .submitDiv {
-  margin-top: 18.5%;
+  margin-top: 11%;
 }
 
 .spaceOutButtons {
@@ -564,32 +564,81 @@ display: flex;
   font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 18pt;
   margin-bottom: 15px;
-  margin-left: 50px;
+  margin-left: 5px;
   margin-top: 10px;
 }
+
 
 .inputDistanceSort {
   font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 18pt;
   margin: 15px;
   margin-top: 10px;
+  margin-left: 50px;
 }
 
 .labelTemp {
   font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 18pt;
   margin-bottom: 25px;
-  margin-left: 50px;
-  margin-top: 10px;
+  margin-left: 5px;
 }
 
+
+
+.sortByTempDiv {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  height: max-content;
+}
+
+.sortByDistDiv {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  height: max-content;
+}
 .inputTempSort {
+  background-color: black;
   font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 18pt;
   margin: 15px;
-  margin-top: 10px;
+  margin-left: 50px;
+  transform: translateY(-12.5px);
 }
 
-.sortByTempDiv {
-  display: block;
+.tempOption {
+  color: whitesmoke;
+  background-color: black;
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  bottom: 100%;
+
+}
+
+.minTempDropdown {
+  width: 100px;
+  background-color: black;
+  color: whitesmoke;
+  margin-top: 10px;
+  margin-left: 105px;
+  margin-bottom: 30px;
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+}
+
+.maxTempDropdown {
+  width: 100px;
+  background-color: black;
+  color: whitesmoke;
+  margin-top: 10px;
+  margin-left: 105px;
+  margin-bottom: 30px;
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
 }
