@@ -24,7 +24,6 @@ export default class Hotels {
   getLocationId(airportCode, checkIn, checkOut) {
     this.locateHotel(airportCode).then(ele => {
       let foundCityID = ele[0][0].cityID;
-      console.log(ele);
       this.parseHotels(foundCityID, checkIn, checkOut);
     },
     function (errorArray) {
@@ -37,7 +36,6 @@ export default class Hotels {
       let searchRequest = new XMLHttpRequest();
       const hotelSearchUrl = `https://priceline-com-provider.p.rapidapi.com/v1/hotels/search?date_checkout=${checkOut}&sort_order=PROXIMITY&date_checkin=${checkIn}&location_id=${locationID}&star_rating_ids=3.0,3.5,4.0,4.5,5.0`;
       searchRequest.addEventListener("loadend", function () {
-        console.log(this);
         const response = JSON.parse(this.responseText);
         if (this.status === 200) {
           resolve([response, locationID]);
@@ -55,7 +53,6 @@ export default class Hotels {
   parseHotels(locationID, checkIn, checkOut) {
     this.searchHotels(locationID, checkIn, checkOut).then(ele => {
       let foundHotelsArray = ele[0].hotels;
-      console.log(foundHotelsArray);
       let counter = 0;
       while (this.foundHotels.length < 3) {
         if (foundHotelsArray[counter].name) {
@@ -64,14 +61,12 @@ export default class Hotels {
         }
         counter++;
       }
-      console.log(this.foundHotels);
     },
     function (errorArray) {
       this.printError(errorArray);
     });
   }
   printError(error) {
-    document.querySelector('#response').setAttribute("class", "error");
     document.querySelector('#response').innerText = `There was an error accessing the exchange data: ${error[0].status}: ${error[0].response}`;
   }
 
