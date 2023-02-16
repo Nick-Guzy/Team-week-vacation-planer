@@ -1,5 +1,5 @@
 {
-  "name": "shape-tracker",
+  "name": "weekend-getaway-planner",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NicksFed/shapetracker.git"
+    "url": "git+https://github.com/NicksFed/Team-week-vacation-planer.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NicksFed/shapetracker/issues"
+    "url": "https://github.com/NicksFed/Team-week-vacation-planer/issues"
   },
-  "homepage": "https://github.com/NicksFed/shapetracker#readme",
+  "homepage": "https://github.com/NicksFed/Team-week-vacation-planer#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.6.0",
