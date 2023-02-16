@@ -16,7 +16,7 @@
         <div class="gridTop">
           <button class="buttonLogin buttonTop">LOG IN</button>
           <button class="buttonSignUp buttonTop">SIGN UP</button>
-          <button class="buttonNewTrip buttonTop">CREATE TRIP!</button>
+          <button class="buttonNewTrip buttonTop" id="createTripButton">CREATE TRIP!</button>
         </div>
         <img
           class="scaleToDivTitle"
@@ -29,8 +29,8 @@
     <div class="flexRightBody">
       <div class="forFlexAside">
         <div class="yourTrips"><p class="pYourTrips">YOUR TRIPS</p></div>
-        <div class="overFlowAside">
-          <div class="TEMPLATEsave">
+        <div class="overFlowAside" id="overFlowAside">
+         <!-- <div class="TEMPLATEsave">
             <p class="pYourTrips">"O BLOCK", Chicago, Il.</p>
           </div>
           <div class="TEMPLATEsave">
@@ -38,7 +38,7 @@
           </div>
           <div class="TEMPLATEsave">
             <p class="pYourTrips">"Min. of Brew.", Baltimore, Md.</p>
-          </div>
+          </div>-->
           <!--<div class="TEMPLATEsave">
             <p class="pYourTrips">TEST</p>
           </div>
@@ -86,15 +86,15 @@
           </div>-->
         </div>
       </div>
-      <div class="outerDivTripFinder">
+      <div class="outerDivTripFinder hidden" id="outerDivTripFinder">
         <div class="tripFinderTitleDiv">
           <p class="pTripFinder">TRIP FINDER</p>
         </div>
         <div class="nameTripDiv">
-          <form>
+          <form id="saveTripForm">
             <label for="nameTrip">NAME TRIP: </label>
             <input type="text" class="nameTripInput" id="nameTrip" />
-            <button class="submitNameButton" type="submit">SAVE TRIP</button>
+            <button class="submitNameButton" type="submit" id="submitNameButton">SAVE TRIP</button>
           </form>
         </div>
         <div class="divHoldInputAndOutput">
@@ -551,9 +551,33 @@
             </form>
           </div>
           <div class="spacerDivMainForm"></div>
-          <div class="outputTripFinder"><div></div></div>
+          <div class="outputTripFinder">
+            <div class="pushUpAtBottom">
+              <div class="containerOutput">
+                <div class="cityOutput" id="cityOutput"><p class="pCityOutput" id="pCityOutput">&#9658 Los Angeles</p>
+                
+              </div>
+                  </div>
+                </div>
+            </div>
+        </div>
         </div>
       </div>
     </div>
   </body>
 </html>
+
+ <!--down: &#9660  right: &#9658  -->
+
+ <!--<div class="flightOutput flight">
+  <p class="flightPrice flight">$529.13 PDX to LAX</p>
+  <p class="leaveDate flight">Leave: 02/24/23</p>
+  <p class="returnDate flight">Return: 02/26/23</p>
+  <p class="flightID flight">DL-2551</p>
+  <p class="hotelsClick flight">&#9660 Hotels:</p>
+  <div class="hotelsDiv">
+    <p class="hotel" >Hostile Hostel</p>
+    <p class="hotel">$25 / night</p>
+    <p class="hotel">1234 4th Ave. Portland, OR</p>
+  </div>
+</div>-->
