@@ -34,7 +34,7 @@ export class FlightService {
           });
           })
         .catch(err => console.error(err));
-    } finally {
+    } finally { console.log("FOOBAR");
     }
   }
 }

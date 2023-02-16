@@ -1,4 +1,4 @@
-export default class Hotels {
+export class Hotels {
   constructor() {
     this.foundHotels = [];
 

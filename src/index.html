@@ -2,8 +2,6 @@
 <html lang="en-US">
   <head>
     <title>NONA'S GRAND ADVENTURES</title>
-    <link rel="stylesheet" href="/src/css/styles.css" />
-    <script src="/src/index.js"></script>
   </head>
   <body>
     <div class="headerOuter">
@@ -30,10 +28,10 @@
       <div class="forFlexAside">
         <div class="yourTrips"><p class="pYourTrips">YOUR TRIPS</p></div>
         <div class="overFlowAside" id="overFlowAside">
-         <div class="TEMPLATEsave">
+         <!--<div class="TEMPLATEsave">
             <p class="pYourTrips">"O BLOCK", Chicago, Il.</p>
             <button class="deleteSave">X</button>
-          </div>
+          </div>-->
           <!--<div class="TEMPLATEsave">
             <p class="pYourTrips">"Marquam Park", Portland, Or.</p>
           </div>
@@ -100,7 +98,7 @@
         </div>
         <div class="divHoldInputAndOutput">
           <div class="inputTripFinder">
-            <form class="mainInput">
+            <form class="mainInput" id="mainInput">
               <div class="startLocationDiv">
                 <label
                   class="toBlock input2 labelStartLocation"
@@ -541,7 +539,7 @@
                 </div>
               </div>
               <div class="submitDiv">
-                <button class="submitTempButton submitMainForm" type="submit">
+                <button class="submitTempButton submitMainForm" type="submit" id="mainSubmit">
                   FIND TRIP
                 </button>
                 <span class="spaceOutButtons"></span>

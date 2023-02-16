@@ -26,16 +26,16 @@ function onFormSubmitWeather(minTemp, maxTemp) {
   myWeather.maxTemp = maxTemp;
   let appropriateCities = [];
   let i = 0;
-  myWeather.checkAppropriateCities();
-  console.log("bye", myWeather.returnCities);
-  console.log("hello", myWeather.returnCities[0]);
+  let m = myWeather.checkAppropriateCities();
+  console.log("m", m[2]);
+  // console.log("hello", myWeather.returnCities[0]);
   while(appropriateCities.length < 5){
     if(myWeather.checkTemperature(myWeather.returnCities[i], minTemp, maxTemp)){
       appropriateCities.push(myWeather.returnCities[i]);
     }
     i++;
   }
-  console.log(appropriateCities);
+  console.log("hellohello", appropriateCities);
   globalObjectArrays.apprCities = appropriateCities;
   //return appropriateCities;
 }

@@ -83,10 +83,12 @@ export class Weather{
   checkAppropriateCities(){
     this.searchCities.forEach(ele => {
       this.getWeekendForecast(ele).then(myEle => {
-        let myFoundCity = [ele[0], ele[1], ele[2], this.parseData(myEle)[0], this.parseData(myEle)[1]];
-        this.returnCities.push(myFoundCity);
+        let myFoundCity = [ele[0], ele[1], ele[2], Weather.parseData(myEle)[0], Weather.parseData(myEle)[1]];
+        this.returnCities.push(myFoundCity); 
       });
     });
+    let a = this.returnCities;
+    return a; 
   }
   //[[place[0], place[1], place[2], Weather.parseData(response)[0], Weather.parseData(response)[1]]]
   async getWeekendForecast(place){ 
@@ -102,7 +104,6 @@ export class Weather{
         }
       });
       weatherRequest.open("GET", weatherLocationUrl, true);
-      weatherRequest.setRequestHeader('X-RapidAPI-Key', process.env.Weather_API_KEY);
       weatherRequest.send();
     });
   }

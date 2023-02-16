@@ -27,6 +27,11 @@ export class Calendar{
     return newDate();
   }
 
+  calculateNextSunday(){
+    let newDate = new Date(this.currentDate.getFullYear(), this.currentDate.getMonth(), this.currentDate.getDate() + this.getDaysTilFriday() + 2);
+    return newDate();
+  }
+
 
   getDaysTilFriday(){
     //calculate sat and sun
