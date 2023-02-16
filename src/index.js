@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import './js/calendar.js';
 import { Calendar } from './js/calendar.js';
-import {Weather} from './js/weather.js';
+// import {Weather} from './js/weather.js';
 import {FlightService} from './js/flights.js';
 import {Hotels} from './js/hotel.js';
 
@@ -20,24 +20,11 @@ class NewFormCounter {
 let globalObjectArrays = {};
 
 function onFormSubmitWeather(minTemp, maxTemp) {
-  // let myCalendar = new Calendar();
-  let myWeather = new Weather();
-  myWeather.minTemp = minTemp;
-  myWeather.maxTemp = maxTemp;
-  let appropriateCities = [];
-  let i = 0;
-  let m = myWeather.checkAppropriateCities();
-  console.log("m", m[2]);
-  // console.log("hello", myWeather.returnCities[0]);
-  while(appropriateCities.length < 5){
-    if(myWeather.checkTemperature(myWeather.returnCities[i], minTemp, maxTemp)){
-      appropriateCities.push(myWeather.returnCities[i]);
-    }
-    i++;
-  }
-  console.log("hellohello", appropriateCities);
-  globalObjectArrays.apprCities = appropriateCities;
-  //return appropriateCities;
+  return [
+    ['Atlanta', 'GA', 'ATL', minTemp, maxTemp],
+    ['Dallas', 'TX', 'DFW', minTemp, maxTemp],
+    ['Denver', 'CO', 'DEN', minTemp, maxTemp]
+  ];
 }
 
 function onFormSubmitFlights(appropriateCities) {
@@ -46,9 +33,13 @@ function onFormSubmitFlights(appropriateCities) {
   let newFlightService = new FlightService();
   appropriateCities.forEach( e => {
     let myDate = new Calendar();
-    newFlightService.getFlight(e[2], startingAirportSelected, new Calendar.formatHotelDate(myDate.calculateNextFriday()), new Calendar.formatHotelDate(myDate.calculateNextSunday()));
+    let myFriday = myDate.calculateNextFriday();
+    let mySunday = myDate.calculateNextSunday();
+
+    newFlightService.getFlight(e[2], startingAirportSelected, Calendar.formatHotelDate(myFriday), Calendar.formatHotelDate(mySunday));
   });
   globalObjectArrays.newFlights = newFlightService;
+  console.log(globalObjectArrays);
   //return newFlightService;
 }
 
@@ -60,6 +51,7 @@ function onFormSubmitHotels(appropriateCities) {
   });
   let foundHotels = hotels.foundHotels;
   globalObjectArrays.foundHotelsArr = foundHotels;
+  console.log(globalObjectArrays);
   //return foundHotels;
 }
 
@@ -104,15 +96,12 @@ window.addEventListener("load", function () {
     let maxTempSelectedIndex = maxTemp.value;
     let minTemp = document.getElementById("minTempDropdown");
     let minTempSelectedIndex = minTemp.value;
-    onFormSubmitWeather(minTempSelectedIndex, maxTempSelectedIndex);
-    onFormSubmitFlights(globalObjectArrays.apprCities);
-    onFormSubmitHotels(globalObjectArrays.apprCities);
-    console.log(globalObjectArrays);
-
-
-
+    let foundcities = onFormSubmitWeather(minTempSelectedIndex, maxTempSelectedIndex);
+    console.log(foundcities);
+    onFormSubmitFlights(foundcities);
+    onFormSubmitHotels(foundcities);
   });
-
+  
   //Get the button for make a new form and unhide the form on event mod 2
   let newFormButton = document.getElementById("createTripButton");
   newFormButton.addEventListener("click", () => {

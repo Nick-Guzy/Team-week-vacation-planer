@@ -24,12 +24,12 @@ export class Calendar{
     //get today's date.
     //return the next friday 
     let newDate = new Date(this.currentDate.getFullYear(), this.currentDate.getMonth(), this.currentDate.getDate() + this.getDaysTilFriday());
-    return newDate();
+    return newDate;
   }
 
   calculateNextSunday(){
     let newDate = new Date(this.currentDate.getFullYear(), this.currentDate.getMonth(), this.currentDate.getDate() + this.getDaysTilFriday() + 2);
-    return newDate();
+    return newDate;
   }
 
 

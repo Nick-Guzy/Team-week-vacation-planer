@@ -11,7 +11,7 @@ export class Weather{
     this.searchCities = [ //[City, State, IATA
     ['Atlanta', 'GA', 'ATL'],
     ['Dallas', 'TX', 'DFW'],
-    ['Denver', 'CO', 'DEN'],
+    ['Denver', 'CO', 'DEN']
     /*
     ['Chicago', 'IL', 'ORD'],
     ['Los Angeles', 'CA', 'LAX'],
@@ -80,6 +80,10 @@ export class Weather{
     //
   }
 
+  async appropCities(){
+    return new Promise(() => this.checkAppropriateCities());
+  }
+
   checkAppropriateCities(){
     this.searchCities.forEach(ele => {
       this.getWeekendForecast(ele).then(myEle => {
@@ -87,11 +91,12 @@ export class Weather{
         this.returnCities.push(myFoundCity); 
       });
     });
-    let a = this.returnCities;
+    let a;
+    setInterval(() => { a = this.returnCities}, 1000);
     return a; 
   }
   //[[place[0], place[1], place[2], Weather.parseData(response)[0], Weather.parseData(response)[1]]]
-  async getWeekendForecast(place){ 
+  async getWeekendForecast(place){ //wrap in set interval
     return new Promise(function (resolve, reject) {
       let weatherRequest = new XMLHttpRequest();
       const weatherLocationUrl = `https://api.weatherbit.io/v2.0/forecast/daily?city=${place[0]},${place[1]}&key=${process.env.Weather_API_KEY}`;
