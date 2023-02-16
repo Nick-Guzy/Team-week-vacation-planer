@@ -5,13 +5,14 @@ export class Weather{
     //takes in time from calendar
     this.lowestTemp;
     this.highestTemp;
-    this.returnCities = []; //format? : ICAO Code
+    this.returnCities = []; //format? : IATA Code
 
     //https://en.wikipedia.org/wiki/List_of_the_busiest_airports_in_the_United_States
     this.searchCities = [ //[City, State, IATA
     ['Atlanta', 'GA', 'ATL'],
     ['Dallas', 'TX', 'DFW'],
     ['Denver', 'CO', 'DEN'],
+    /*
     ['Chicago', 'IL', 'ORD'],
     ['Los Angeles', 'CA', 'LAX'],
     ['Charlotte', 'NC', 'CLT'],
@@ -74,24 +75,38 @@ export class Weather{
     ['Reno', 'NV', 'RNO'],
     ['Alburquerque', 'NM', 'ABQ'],
     ['Norfolk', 'VA', 'ORF']
-    
+    */
     ];
     //
   }
 
   checkAppropriateCities(){
     this.searchCities.forEach(ele => {
-      this.getWeekendForecast(ele);
+      this.getWeekendForecast(ele).then(myEle => {
+        let myFoundCity = [ele[0], ele[1], ele[2], this.parseData(myEle)[0], this.parseData(myEle)[1]];
+        this.returnCities.push(myFoundCity);
+      });
     });
   }
-  
-  getWeekendForecast(place){ 
-    fetch(`https://api.weatherbit.io/v2.0/forecast/daily?city=${place[0]},${place[1]}&key=${process.env.Weather_API_KEY}`)
-      .then((response) => response.json())
-      .then((data) => {
-        this.returnCities.push([place[0], place[1], place[2] , Weather.parseData(data)[0], Weather.parseData(data)[1]]);
+  //[[place[0], place[1], place[2], Weather.parseData(response)[0], Weather.parseData(response)[1]]]
+  async getWeekendForecast(place){ 
+    return new Promise(function (resolve, reject) {
+      let weatherRequest = new XMLHttpRequest();
+      const weatherLocationUrl = `https://api.weatherbit.io/v2.0/forecast/daily?city=${place[0]},${place[1]}&key=${process.env.Weather_API_KEY}`;
+      weatherRequest.addEventListener("loadend", function () {
+        const response = JSON.parse(this.responseText);
+        if (this.status === 200) {
+          resolve(response, place);
+        } else {
+          reject([this, response]);
+        }
       });
+      weatherRequest.open("GET", weatherLocationUrl, true);
+      weatherRequest.setRequestHeader('X-RapidAPI-Key', process.env.Weather_API_KEY);
+      weatherRequest.send();
+    });
   }
+
 
   static parseData(inputJSON){
     //get today's date
@@ -115,12 +130,14 @@ export class Weather{
     return [weekendLow, weekendHigh];
   }
 
-  static checkTemperature(placeData, low, high){ //placeData in the format of [city, state, iata, low, high]
+  checkTemperature(placeData, low, high){ //placeData in the format of [city, state, iata, low, high]
     if (placeData[3] < low || placeData[4] > high){
       return false;
     } else return true;
   }
 
-
+  getSpecificCity(index){
+    return this.returnCities[index];
+  }
 }
 

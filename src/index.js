@@ -1,6 +1,12 @@
-// import 'bootstrap';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import './css/styles.css';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/styles.css';
+import './js/calendar.js';
+import { Calendar } from './js/calendar.js';
+import {Weather} from './js/weather.js';
+import {FlightService} from './js/flights.js';
+import {Hotels} from './js/hotel.js';
+
 
 class NewFormCounter {
   constructor() {
@@ -10,6 +16,55 @@ class NewFormCounter {
     this.start = this.start + 1;
   }
 }
+
+let globalObjectArrays = {};
+
+function onFormSubmitWeather(minTemp, maxTemp) {
+  // let myCalendar = new Calendar();
+  let myWeather = new Weather();
+  myWeather.minTemp = minTemp;
+  myWeather.maxTemp = maxTemp;
+  let appropriateCities = [];
+  let i = 0;
+  myWeather.checkAppropriateCities();
+  console.log("bye", myWeather.returnCities);
+  console.log("hello", myWeather.returnCities[0]);
+  while(appropriateCities.length < 5){
+    if(myWeather.checkTemperature(myWeather.returnCities[i], minTemp, maxTemp)){
+      appropriateCities.push(myWeather.returnCities[i]);
+    }
+    i++;
+  }
+  console.log(appropriateCities);
+  globalObjectArrays.apprCities = appropriateCities;
+  //return appropriateCities;
+}
+
+function onFormSubmitFlights(appropriateCities) {
+  let startingAirport = document.getElementById("startingAirportDropdown");
+  let startingAirportSelected = startingAirport.value;
+  let newFlightService = new FlightService();
+  appropriateCities.forEach( e => {
+    let myDate = new Calendar();
+    newFlightService.getFlight(e[2], startingAirportSelected, new Calendar.formatHotelDate(myDate.calculateNextFriday()), new Calendar.formatHotelDate(myDate.calculateNextSunday()));
+  });
+  globalObjectArrays.newFlights = newFlightService;
+  //return newFlightService;
+}
+
+function onFormSubmitHotels(appropriateCities) {
+  let hotels = new Hotels();
+  let myDate = new Calendar();
+  appropriateCities.forEach( e => {
+    hotels.getLocationId(e[2], new Calendar.formatHotelDate(myDate.calculateNextFriday()), new Calendar.formatHotelDate(myDate.calculateNextSunday()));
+  });
+  let foundHotels = hotels.foundHotels;
+  globalObjectArrays.foundHotelsArr = foundHotels;
+  //return foundHotels;
+}
+
+
+
 
 window.addEventListener("load", function () {
 
@@ -41,12 +96,28 @@ window.addEventListener("load", function () {
 
 
 
+  //GET USER INPUT FR TEMP
+  let mainSubmitForm = document.getElementById("mainInput");
+  mainSubmitForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let maxTemp = document.getElementById("maxTempDropdown");
+    let maxTempSelectedIndex = maxTemp.value;
+    let minTemp = document.getElementById("minTempDropdown");
+    let minTempSelectedIndex = minTemp.value;
+    onFormSubmitWeather(minTempSelectedIndex, maxTempSelectedIndex);
+    onFormSubmitFlights(globalObjectArrays.apprCities);
+    onFormSubmitHotels(globalObjectArrays.apprCities);
+    console.log(globalObjectArrays);
+
+
+
+  });
+
   //Get the button for make a new form and unhide the form on event mod 2
   let newFormButton = document.getElementById("createTripButton");
   newFormButton.addEventListener("click", () => {
     let divInputAndOutput = document.getElementById("outerDivTripFinder");
     formCounter.incrementStart();
-    console.log(formCounter.start);
     if (formCounter.start % 2 === 1) {
       divInputAndOutput.classList.remove("hidden");
     } else if (formCounter.start % 2 === 0 && formCounter.start > 1) {
