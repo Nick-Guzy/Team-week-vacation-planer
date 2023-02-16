@@ -1,8 +1,8 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import './flights';
-import {FlightService} from './flights';
+import './js/flights';
+import {FlightService} from './js/flights';
 
 function handleFormSubmission(event) {
   event.preventDefault();
