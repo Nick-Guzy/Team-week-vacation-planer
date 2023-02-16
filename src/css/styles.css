@@ -333,6 +333,25 @@ display: flex;
   overflow: hidden;
 }
 
+.deleteSave {
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
+  color: whitesmoke;
+  font-family: "spectral", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 14pt;
+  padding: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-right: 3px;
+  border-radius: 5px;
+}
+
+.deleteSave:hover {
+  border: 1px solid whitesmoke;
+  cursor: pointer;
+}
+
 
 .TEMPLATEsave:hover {
   background-image: linear-gradient(to bottom, #852240, #421120);
@@ -715,6 +734,11 @@ display: flex;
 .hotel {
   margin: 0;
   margin-left: 50px;
+}
+
+.hotelOffset {
+  margin: 0;
+  margin-left: 85px;
 }
 
 .pCityOutput {
