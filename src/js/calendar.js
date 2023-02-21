@@ -12,11 +12,14 @@ export class Calendar{
     let returnDay;
     if(month <= 9){
       returnMonth = "0" + month;
+    } else {returnMonth = month;
     }
     if(day <= 9){
       returnDay = "0" + day;
+    } else {returnDay = day;
     }
     let returnString = year + "-" + returnMonth + "-" + returnDay;
+    console.log(returnString);
     return returnString;
   }
   
